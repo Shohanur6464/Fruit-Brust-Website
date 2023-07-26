@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/89d959d1a7.js" crossorigin="anonymous"></script>
     <style>
         .font{
             font-family: 'Lato', sans-serif;
@@ -17,7 +18,57 @@
     </style>
 </head>
 
-<body class="font">
+<body class="container mx-auto font">
+    <!-- nav section -->
+    <nav class="lg:relative bg-[#F85559] mt-12 rounded-[600px]">
+        <!-- small and medium device -->
+        <div class="flex justify-between p-10 bg-white lg:hidden">
+            <div class="flex items-center gap-3">
+                <div>
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-4xl font-semibold">Fruit Burst</h3>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="hidden lg:flex justify-between navbar p-5">
+            <!-- left side -->
+            <div>
+              <ul class="flex justify-between gap-10 cursor-pointer">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Shop</li>
+                <li>All Fruits</li>
+              </ul>
+            </div>
+            <!-- middle -->
+            <div class="gap-3">
+                <div>
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-4xl font-semibold">Fruit Burst</h3>
+                </div>
+            </div>
+            <!-- right side -->
+            <div class="flex-none gap-2">
+              <div class="relative form-control">
+                <input type="text" placeholder="Search" class="input input-bordered w-28 md:w-auto" />
+              </div>
+              <!-- <div class="dropdown dropdown-end"> -->
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="absolute -ml-28">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </label>
+              </div>
+            </div>
+          </div>
+    </nav>
 
 </body>
 
