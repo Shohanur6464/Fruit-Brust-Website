@@ -11,6 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89d959d1a7.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'button-primary': '#F85559',
+                'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
+              }
+            }
+          }
+        }
+      </script>
     <style>
         .font{
             font-family: 'Lato', sans-serif;
@@ -19,7 +32,9 @@
 </head>
 
 <body class="container mx-auto font">
-    <!-- nav section -->
+    <!-- header section -->
+    <header>
+        <!-- nav section -->
     <nav class="lg:relative bg-[#F85559] mt-12 rounded-[600px]">
         <!-- small and medium device -->
         <div class="flex justify-between p-10 bg-white lg:hidden">
@@ -38,7 +53,7 @@
         <div class="hidden lg:flex justify-between navbar p-5">
             <!-- left side -->
             <div>
-              <ul class="flex justify-between gap-10 cursor-pointer">
+              <ul class="flex justify-between ml-7 gap-10 cursor-pointer">
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Shop</li>
@@ -59,7 +74,7 @@
               <div class="relative form-control">
                 <input type="text" placeholder="Search" class="input input-bordered w-28 md:w-auto" />
               </div>
-              <!-- <div class="dropdown dropdown-end"> -->
+              <div class="dropdown dropdown-end">
                 <label tabindex="0" class="btn btn-ghost btn-circle avatar">
                     <div class="absolute -ml-28">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -69,6 +84,127 @@
             </div>
           </div>
     </nav>
+    <!-- banner section -->
+    <div>
+        <div class="container mx-auto relative z-10 carousel mt-20 lg:h-[450px]">
+            <div id="s-1" class="hero carousel-item relative" style="background-image: url(images/banner1.png);">
+                <div class="hero-overlay bg-opacity-2  0"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div>
+                    <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn bg-button-primary text-white border-none">Shop Now</button>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#s-4" class="btn btn-circle">❮</a> 
+                    <a href="#s-2" class="btn btn-circle">❯</a>
+                  </div>
+              </div>
+            <div id="s-2" class="hero carousel-item relative" style="background-image: url(images/banner2.png);">
+                <div class="hero-overlay bg-opacity-2  0"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div>
+                    <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn bg-button-primary text-white border-none">Shop Now</button>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#s-1" class="btn btn-circle">❮</a> 
+                    <a href="#s-3" class="btn btn-circle">❯</a>
+                  </div>
+              </div>
+            <div id="s-3" class="hero carousel-item relative" style="background-image: url(images/banner3.png);">
+                <div class="hero-overlay bg-opacity-2  0"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div>
+                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn bg-button-primary text-white border-none">Shop Now</button>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#s-2" class="btn btn-circle">❮</a> 
+                    <a href="#s-4" class="btn btn-circle">❯</a>
+                  </div>
+              </div>
+            <div id="s-4" class="hero carousel-item relative" style="background-image: url(images/banner4.png);">
+                <div class="hero-overlay bg-opacity-2  0"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div>
+                    <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn bg-button-primary text-white border-none">Shop Now</button>
+                  </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#s-3" class="btn btn-circle">❮</a> 
+                    <a href="#s-1" class="btn btn-circle">❯</a>
+                  </div>
+              </div>
+            
+        </div>
+        <div class="lg:absolute flex flex-row z-20 gap-24 mx-24 p-9 bg-white -mt-20">
+            <div>
+                <img src="images/fruit1.png" alt="">
+            </div>
+            <div>
+                <img src="images/fruit2.png" alt="">
+            </div>
+            <div>
+                <img src="images/fruit3.png" alt="">
+            </div>
+            <div>
+                <img src="images/fruit4.png" alt="">
+            </div>
+            <div>
+                <img src="images/fruit5.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    </header>
+    
+    <!-- main section -->
+    <main>
+        <!-- deal of the section -->
+        <section>
+            <div class="flex flex-row justify-between items-center mt-36">
+                <div class="flex flex-col">
+                    <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+                    <p class="font-medium mt-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                    <div class="flex flex-row gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:29;"></span>:
+                          </span>
+                          days
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:15;"> </span>:
+                          </span>
+                          
+                          hours
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:25;"></span>:
+                          </span>
+                          min
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:08;"></span>:
+                          </span>
+                          sec
+                        </div>
+                      </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 
